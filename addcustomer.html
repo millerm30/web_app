@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Home</title>
+ <meta charset="UTF-8">
+ <meta name="author" content="Michael Miller">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/x-icon" href="./images/phonebook_icon.ico">
+ <link rel="stylesheet" href="./stylesheets/styles.css">
+</head>
+<body>
+<header>
+ <header-component></header-component>
+ <navigation-component></navigation-component>
+</header>
+<main>
+<div id="formContainer">
+<form class="myForm">
+ <div id="nameInputContainer">
+  <img id="nameInputImage" src="./images/user.png" />
+  <input type="text" id="nameInput" placeholder="Customer name..." />
+ </div>
+ <div id="addressInputContainer">
+  <img id="addressInputImage" src="./images/home.png" />
+  <input type="address" id="addressInput" placeholder="Customer address..." />
+ </div>
+ <div id="phoneInputContainer">
+  <img id="phoneInputImage" src="./images/phone.png" />
+  <input type="tel" id="phoneInput" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="709-123-4567" />
+ </div>
+ <div id="emailInputContainer">
+  <img id="emailInputImage" src="./images/email.png" />
+  <input type="email" id="emailInput" placeholder="Email address..." />
+ </div>
+ <div id="textareaInputContainer">
+  <img id="textareaInputImage" src="./images/cart.png" />
+  <textarea name="products" rows="6" columns"30" id="textareaInput" placeholder="Products or notes here..."></textarea>
+ </div>
+ <button type="submit" id="submitBtn">Add Customer</button>
+</form>
+</div>
+<div id="messageContainer"><p id="message"></p></div>
+</main>
+<footer>
+ <footer-component></footer-component>
+</footer>
+<script src="./javascript/headerComponent.js"></script>
+<script src="./javascript/navigationComponent.js"></script>
+<script src="./javascript/footerComponent.js"></script>
+<script src="./javascript/formActions.js"></script>
+</body>
+</html>

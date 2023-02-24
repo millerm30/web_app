@@ -1,0 +1,375 @@
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+body {
+ background-color: #F9F9F9;
+}
+
+header {
+ display: flex;
+ flex-direction: column;
+ background-color: rgb(255,205,0);
+}
+
+main {
+ min-height: calc(100vh - 150px - 58px);
+}
+
+#mainContainer {
+ padding-top: 20px;
+ text-align: center;
+}
+
+#customerDirectoryHeader {
+ text-align: center;
+ padding: 20px 0px;
+}
+
+#deliveryHeader {
+ text-align: center;
+ padding: 20px 0px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(255,205,0);
+  color: #000;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#formContainer {
+ display: flex;
+ justify-content: center;
+ padding: 40px 0px;;
+}
+
+.myForm {
+ display: flex;
+ flex-direction: column;
+ width: 360px;
+ background-color: #fff;
+ padding: 20px;
+ border: 1px solid #000;
+ border-radius: 12px;
+ box-shadow: 0px 0px 8px #000;
+}
+
+#nameInputContainer {
+ display: flex;
+ background-color: #009370;
+ border: 2px solid #009370;
+ border-radius: 6px;
+ margin: 0px 0px 10px 0px;
+}
+
+#addressInputContainer {
+ display: flex;
+ background-color: #009370;
+ border: 2px solid #009370;
+ border-radius: 6px;
+ margin: 0px 0px 10px 0px;
+}
+
+#phoneInputContainer {
+ display: flex;
+ background-color: #009370;
+ border: 2px solid #009370;
+ border-radius: 6px;
+ margin: 0px 0px 10px 0px;
+}
+
+#emailInputContainer {
+ display: flex;
+ background-color: #009370;
+ border: 2px solid #009370;
+ border-radius: 6px;
+ margin: 0px 0px 10px 0px;
+}
+
+#textareaInputContainer {
+ display: flex;
+ background-color: #009370;
+ border: 2px solid #009370;
+ border-radius: 6px;
+ margin: 0px 0px 10px 0px;
+}
+
+.myForm img {
+ width: 25px;
+ margin: 6px;
+}
+
+.myForm input {
+ border: none;
+ border-radius: 0px 6px 6px 0px;
+ width: 100%;
+ background-color: #fff;
+ padding-left: 6px;
+ outline: none;
+}
+
+.myForm textarea {
+ border: none;
+ border-radius: 0px 6px 6px 0px;
+ width: 100%;
+ background-color: #fff;
+ padding-left: 6px;
+ resize: none;
+ padding: 6px 4px;
+ outline: none;
+}
+
+#textareaInputImage {
+ margin-top: auto;
+ margin-bottom: auto;
+}
+
+.myForm button {
+ padding: 10px;
+ background-color: orange;
+ border: none;
+ border-radius: 4px;
+ text-transform: uppercase;
+ margin: 6px 0;
+}
+
+.myForm button:hover {
+ cursor: pointer;
+ opacity: 80%;
+}
+
+#data {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ grid-gap: 10px;
+ margin: 0px 6px;
+}
+
+#message {
+ text-align: center;
+ color: red;
+ font-weight: bold;
+}
+
+#noUsersMessage {
+ text-align: center;
+}
+
+.userContainer ul {
+ margin: 5px 20px;
+}
+
+#deleteButtonContainer {
+ background-color: #009370;
+ border-radius: 12px 12px 0px 0px;
+ display: flex;
+ justify-content: end;
+}
+
+.userContainer .deleteButton {
+ border: none;
+ background-color: rgb(255,205,0);
+ padding: 2px 4px;
+ border-radius: 50%;
+ color: #000;
+ display: block;
+ font-weight: bold;
+ margin: 4px;
+}
+
+.userContainer .deleteButton:hover {
+ cursor: pointer;
+}
+
+#userInfoContainer {
+ border-left: 2px solid #009370;
+ border-right: 2px solid #009370;
+ border-bottom: 2px solid #009370;
+ padding: 4px;
+ border-radius: 0px 0px 14px 14px;
+}
+
+footer {
+ background-color: #009370;
+ padding: 20px;
+}
+
+#calendar {
+ display: flex;
+ justify-content: center;
+ padding-top: 40px;
+ align-items: center;
+}
+
+table {
+ border-collapse: collapse;
+ width: 50%;
+ align-self: center;
+}
+
+#tableHeader {
+ font-size: 2rem;
+}
+
+table thead {
+ background-color: #009370;
+ border: 1px solid #000;
+ color: #fff;
+}
+
+table thead tr th:nth-child(1) {
+ padding: 6px 0px;
+}
+
+td {
+ border: 1px solid black;
+ padding: 15px;
+ text-align: center;
+}
+
+.today {
+ background-color: yellow;
+ font-weight: 800;
+ border: 2px solid red;
+}
+
+#previous {
+ border: none;
+ background-color: rgb(255,205,0);
+ padding: 4px 10px;
+ margin: 10px 0px;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+#next {
+ border: none;
+ background-color: rgb(255,205,0);
+ padding: 4px 10px;
+ margin: 10px 0px;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+#weatherContainer {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin-right: auto;
+ margin-left: auto;
+ border: 1px solid #009370;
+ border-radius: 14px;
+ width: 300px;
+ padding: 6px;
+ margin-top: 10px;
+ background-color: rgb(255,205,0);
+}
+
+#weatherNumbers {
+ text-align: right;
+ padding: 5px;
+}
+
+#weatherNumbers p {
+ margin: 5px 0;
+}
+
+#weatherLogoContainer {
+ display: flex;
+ padding: 5px;
+ justify-content: center;
+ align-items: center;
+}
+
+#spinner {
+ display: none;
+ margin-left: auto;
+ margin-right: auto;
+ width: 60px;
+ height: 60px;
+ border: 10px solid silver;
+ border-top: 10px solid red;
+ border-radius: 50%;
+ animation: spin 1.5s linear infinite;
+}
+
+#deliveryMapContainer {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin-bottom: 10px;
+}
+
+#deliveryMapImageContainer {
+ margin: 10px;
+}
+
+#retailDeliveryContainer {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ margin: 10px;
+ padding: 10px;
+ background-color: #009370;
+}
+
+#cbnInfoContainer {
+ background-color: rgb(255,205,0);
+ padding: 10px;
+ margin: 10px 0px;
+ border-radius: 10px;
+}
+
+#placentiaInfoContainer {
+ background-color: rgb(255,205,0);
+ padding: 10px;
+ margin: 10px 0px;
+ border-radius: 10px;
+}
+
+#shoreInfoContainer {
+ background-color: rgb(255,205,0);
+ padding: 10px;
+ margin: 10px 0px;
+ border-radius: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 720px) {
+ table {
+  width: 98%;
+ }
+ #data {
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-gap: 10px;
+ margin: 0px 6px;
+ }
+ #deliveryMapImage {
+  width: 100%;
+ }
+}
+
+@media screen and (max-width: 1080px) {
+ #deliveryMapContainer {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ }
+}

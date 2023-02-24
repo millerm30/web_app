@@ -1,0 +1,84 @@
+#phoneContainer {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 0px 2px 10px 2px;
+}
+
+#storeDirectoryHeader {
+ text-align: center;
+ margin: 20px 0px;
+}
+
+.headerSpan h3 {
+ background-color: #009370;
+ color: rgb(255,205,0);
+ padding: 2px;
+ text-align: center;
+ border-radius: 14px 14px 0px 0px;
+ text-transform: uppercase;
+}
+
+.infoLineSpan {
+ display: flex;
+ justify-content: space-between;
+ padding: 5px ;
+ border-left: 2px solid #009370;
+ border-right: 2px solid #009370;
+ position: relative;
+}
+
+.infoLineSpan:nth-last-child(1) {
+ border-bottom: 2px solid #009370;
+ margin-bottom: 8px;
+}
+
+.infoLineSpan:nth-child(odd) {
+ background-color: #fff;
+}
+
+.infoLineSpan::after {
+ content: "";
+ position: absolute;
+ width: 100%;
+ transform: scaleX(0);
+ height: 4px;
+ bottom: 0;
+ left: 0;
+ background-color: rgb(255,205,0);
+ transform-origin: bottom center;
+ transition: transform 0.25s ease-out;
+}
+
+.infoLineSpan:hover::after {
+ transform: scaleX(1);
+ transform-origin: bottom center;
+}
+
+#leftContainer {
+ width: 50%;
+}
+
+#rightContainer {
+ width: 50%;
+}
+
+.container {
+ margin: 2px;
+}
+
+@media screen and (max-width: 640px) {
+ #phoneContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 2px 10px 2px;
+ }
+
+ #leftContainer {
+  width: 100%;
+ }
+
+ #rightContainer {
+  width: 100%;
+ }
+}

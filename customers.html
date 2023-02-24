@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Customers</title>
+ <meta charset="UTF-8">
+ <meta name="author" content="Michael Miller">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/x-icon" href="./images/phonebook_icon.ico">
+ <link rel="stylesheet" href="./stylesheets/styles.css">
+</head>
+<body>
+<header>
+ <header-component></header-component>
+ <navigation-component></navigation-component>
+</header>
+<main>
+<h2 id="customerDirectoryHeader">Customers</h2>
+<p id="message"></p>
+<p id="noUsersMessage"></p>
+<div id="data"></div>
+<div id="spinner"></div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</main>
+<footer>
+ <footer-component></footer-component>
+</footer>
+<script src="./javascript/headerComponent.js"></script>
+<script src="./javascript/navigationComponent.js"></script>
+<script src="./javascript/footerComponent.js"></script>
+<script src="./javascript/customerActions.js"></script>
+</body>
+</html>

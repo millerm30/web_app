@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Home</title>
+ <meta charset="UTF-8">
+ <meta name="author" content="Michael Miller">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/x-icon" href="./images/phonebook_icon.ico">
+ <link rel="stylesheet" href="./stylesheets/styles.css">
+</head>
+<body>
+<header>
+ <header-component></header-component>
+ <navigation-component></navigation-component>
+</header>
+<main>
+ <div id="mainContainer">
+  <h2>Welcome!</h2>
+  <p>This app will allow various services. Created using windows simple notepad.</p>
+  <p>Built while CRM software was down and needed something quick to use.</p>
+  <p>Add Customers, store phone directory and calendar</p>
+ </div>
+ <div id="weatherContainer">
+  <div id="weatherLogoContainer"><img src="" id="weatherImage" alt="Weather Icon"></img></div>
+  <div id="weatherNumbers">
+   <p id="location"></p>
+   <p id="currentTemp"></p>
+   <p id="currentFeelsLike"></p>
+   <p id="description"></p>
+  </div>
+ </div>
+</main>
+<footer>
+ <footer-component></footer-component>
+</footer>
+<script src="./javascript/headerComponent.js"></script>
+<script src="./javascript/navigationComponent.js"></script>
+<script src="./javascript/footerComponent.js"></script>
+<script src="./javascript/weatherActions.js"></script>
+</body>
+</html>

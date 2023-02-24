@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Home</title>
+ <meta charset="UTF-8">
+ <meta name="author" content="Michael Miller">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/x-icon" href="./images/phonebook_icon.ico">
+ <link rel="stylesheet" href="./stylesheets/styles.css">
+</head>
+<body>
+<header>
+ <header-component></header-component>
+ <navigation-component></navigation-component>
+</header>
+<main>
+ <h2 id="deliveryHeader">Delivery Schedule</h2>
+ <div id="deliveryMapContainer">
+  <div id="deliveryMapImageContainer">
+   <img src="./images/deliveryMap.png" alt="Delivery Map" id="deliveryMapImage" />
+  </div>
+  <div id="retailDeliveryContainer">
+   <h2>Delivery Information</h2>
+   <div id="cbnContainer">
+    <h3>Tuesday & Thursday</h3>
+    <div id="cbnInfoContainer">
+     <h3>Location</h3>
+     <h4>Retail</h4>
+     <p>Zone 1 - Boom $0.00 | Van $0.00</p>
+     <p>Zone 2 - Boom $0.00 | Van $0.00</p>
+     <br>
+     <h4>Contractor</h4>
+     <p>Zone 1 - $0.00</p>
+     <p>Zone 2 - $0.00</p>
+     <br>
+     <p>Location</p>
+     <p>Request only - $0.00</p>
+    </div>
+   </div>
+   <div id="placentiaContainer">
+    <h3>Wednesday & Friday</h3>
+    <div id="placentiaInfoContainer">
+     <h3>Location</h3>
+     <p>Zone 3 - Boom $0.00 | Van $0.00</p>
+     <p>Zone 4 - Boom $0.00 | Van $0.00</p>
+     <br>
+     <h4>Contractor</h4>
+     <p>Zone 1 - $0.00</p>
+     <p>Zone 2 - $0.00</p>
+     <br>
+     <p>Location</p>
+     <p>Request only - $0.00</p>
+    </div>
+   </div>
+   <div id="southernContainer">
+    <h3>Call to schedule</h3>
+    <div id="shoreInfoContainer">
+     <h3>Location</h3>
+     <p>Zone 5 - Boom $0.00 | Van $0.00</p>
+     <p>Zone 6 - Boom $0.00 | Van $0.00</p>
+     <br>
+     <h4>Contractor</h4>
+     <p>Zone 1 - $0.00</p>
+     <p>Zone 2 - $0.00</p>
+     <br>
+     <p>Location</p>
+     <p>Request only - $0.00</p>
+    </div>
+   </div>
+  </div>
+ </div>
+ </div>
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</main>
+<footer>
+ <footer-component></footer-component>
+</footer>
+<script src="./javascript/scrollTop.js"></script>
+<script src="./javascript/headerComponent.js"></script>
+<script src="./javascript/navigationComponent.js"></script>
+<script src="./javascript/footerComponent.js"></script>
+</body>
+</html>
